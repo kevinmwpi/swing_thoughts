@@ -1,0 +1,546 @@
+# The swing thought bank. The bot posts these top to bottom, one per day.
+#
+# Every post renders as:
+#
+#   Swing Thought #12: "<cue>"
+#
+#   For: <for>
+#
+#   <feel>
+#
+#   Try it: <drill>          (only if drill is set)
+#
+# Fields
+#   id      unique slug, never reuse or rename once posted (the log uses it)
+#   cue     the swing thought itself, short enough to remember on the tee
+#   for     who it's for: the miss or fault it fixes. This is the most important
+#           line. It lets a reader skip what isn't theirs and spot what is.
+#   feel    what it should feel like, in plain words
+#   drill   optional: one concrete range rep
+#   phase   setup | takeaway | backswing | transition | downswing | impact |
+#           finish | tempo | putting | short-game | course | mental | practice
+#   source  where the idea comes from (not posted; for our own honesty)
+#   status  approved = will be posted, draft = waiting for review, retired = never
+#
+# Rules: original wording only (no pasting other people's tips), no links
+# (they cost 13x more per post and get less reach), and every post must fit
+# in 280 characters. `python -m bot check` enforces the last two.
+#
+# "Lead" = the side closer to the target (left side for a right-hander).
+# "Trail" = the other side.
+
+- id: turn-your-back
+  cue: Turn your back to the target.
+  for: Short, armsy backswings and over-the-top slices.
+  feel: At the top your back faces the target and the arms just ride along. Turn first. Lift never.
+  drill: 5 slow turns with a club across your chest, then hit 10 balls.
+  phase: backswing
+  source: Common teaching cue
+  status: approved
+
+- id: grip-toothpaste
+  cue: Hold it like a tube of toothpaste.
+  for: Death grips that kill speed.
+  feel: Firm enough to control it, light enough that nothing squirts out. Tight hands make tight arms, and tight arms are slow.
+  drill: Rate your grip 1-10 at address. Hit 10 balls at a 4.
+  phase: setup
+  source: Common cue; Sam Snead's "hold it like a small bird" image
+  status: approved
+
+- id: hold-your-finish
+  cue: Hold your finish for three seconds.
+  for: Off-balance swings and hitting "at" the ball.
+  feel: Belt buckle at the target, weight on your lead foot, trail toe up. Can't hold it? You swung out of balance.
+  drill: Count to three in your finish on every range ball.
+  phase: finish
+  source: Common teaching cue
+  status: approved
+
+- id: start-it-through-the-gate
+  cue: Start it through the gate.
+  for: Short putts that start offline.
+  feel: Most short misses never start on line. Make the start line your only job and trust your read.
+  drill: Two tees 6 inches ahead of the ball, just wider than it. Roll 20 putts through.
+  phase: putting
+  source: Common putting gate drill
+  status: approved
+
+- id: swing-the-clubhead
+  cue: Swing the clubhead, not the club.
+  for: Tight, jerky swings.
+  feel: Feel the weight of the head on the end of the shaft, like a rock on a string. Ernest Jones built a career on this.
+  drill: Swing a knotted towel. Make it whoosh past the ball.
+  phase: tempo
+  source: Ernest Jones, "Swing the Clubhead" (1952)
+  status: approved
+
+- id: divot-after-ball
+  cue: Make the divot after the ball.
+  for: Fat and thin iron shots.
+  feel: Your low point belongs in front of the ball. Look at its front edge, not the back, and get your weight forward by impact.
+  drill: Lay a towel 4 inches behind the ball. Don't touch it.
+  phase: impact
+  source: Common low-point teaching
+  status: approved
+
+- id: see-the-shot
+  cue: See the shot, then hit it.
+  for: Thinking about mechanics over the ball.
+  feel: From behind the ball, picture the flight. Start line, curve, landing spot. Then step in and let your body chase the picture. Jack Nicklaus called it "going to the movies."
+  phase: mental
+  source: Jack Nicklaus, "Golf My Way"
+  status: approved
+
+- id: bump-then-turn
+  cue: Bump, then turn.
+  for: Fat shots and slices from leading with the shoulders.
+  feel: From the top, shift onto your lead foot first, then unwind. The club drops into the slot on its own.
+  drill: Swing to the top, pump halfway down twice, then swing through.
+  phase: transition
+  source: Common transition cue
+  status: approved
+
+- id: hinge-from-hips
+  cue: Hinge from the hips, not the waist.
+  for: Hunched setups and inconsistent contact.
+  feel: Push your hips back like you're closing a car door with them. Soft knees, flat back, arms hanging straight down from your shoulders.
+  phase: setup
+  source: Common posture teaching
+  status: approved
+
+- id: chip-like-you-putt
+  cue: Chip like you putt.
+  for: Chunked and bladed chips from too much wrist.
+  feel: Narrow stance, weight forward, ball back. Rock your shoulders like a putting stroke and let the loft do the lifting.
+  drill: Hit 10 chips with a 9-iron using only your putting stroke.
+  phase: short-game
+  source: Common chipping teaching
+  status: approved
+
+- id: feet-together
+  cue: Swing with your feet together.
+  for: Swaying, lunging, and swinging too hard.
+  feel: Feet touching, easy 7-irons. Sway or overswing and you fall over, so arms and body learn to move together.
+  drill: 10 balls feet together, then 5 normal with the same feel.
+  phase: tempo
+  source: Common balance drill
+  status: approved
+
+- id: swing-to-right-field
+  cue: Swing out to right field.
+  for: Righty slicers. Lefties, think left field.
+  feel: Treat the target as second base and swing out to right field. In-to-out turns a slice into a draw.
+  drill: Headcover 6 inches behind and just outside the ball. Miss it.
+  phase: downswing
+  source: Common path cue and headcover drill
+  status: approved
+
+- id: one-thought-per-round
+  cue: One thought per round. That's it.
+  for: Golfers who run through a checklist over every shot.
+  feel: Pick one cue on the range, take it to the course, and leave everything else in the car. If it stops working, play by feel and fix it later.
+  phase: mental
+  source: Common coaching advice
+  status: approved
+
+- id: belly-button-takeaway
+  cue: Take it back with your chest.
+  for: Handsy takeaways that whip it inside.
+  feel: Keep the arms-and-shoulders triangle for the first two feet. Chest turns, hands stay quiet.
+  drill: Choke down with the grip in your belly button. Turn so the club moves with you.
+  phase: takeaway
+  source: Common one-piece takeaway drill
+  status: approved
+
+- id: seventeen-inches
+  cue: Roll it 17 inches past.
+  for: Three-putts and putts that die off line.
+  feel: Dave Pelz found this speed holes the most putts. Firm enough to hold the line, soft enough to drop.
+  drill: Tee 17 inches behind the hole. Stop 10 putts between the cup and the tee.
+  phase: putting
+  source: Dave Pelz, "Putting Bible"
+  status: approved
+
+- id: three-back-one-down
+  cue: Three back, one down.
+  for: Rushed transitions and quick, jerky swings.
+  feel: John Novosel measured tour swings and found the backswing takes about three times as long as the downswing. Count one-two-three back, four through the ball.
+  phase: tempo
+  source: John Novosel, "Tour Tempo"
+  status: approved
+
+- id: skip-a-stone
+  cue: Skip a stone with your trail hand.
+  for: Over-the-top swings and early arm throw.
+  feel: Trail elbow tucks in front of your hip, palm faces the target through impact. Pure sidearm.
+  drill: 10 sidearm throws, then half wedges with the same feel.
+  phase: downswing
+  source: Common trail-arm image
+  status: approved
+
+- id: two-knuckles
+  cue: See two knuckles on your lead hand.
+  for: Slicers with a weak grip.
+  feel: At address you should see two or three knuckles on your lead hand. Fewer than two and squaring the face gets hard.
+  drill: Check it before every ball for a full bucket.
+  phase: setup
+  source: Common grip fundamental
+  status: approved
+
+- id: pane-of-glass
+  cue: Stay under the pane of glass.
+  for: Steep, upright backswings that come down over the top.
+  feel: Ben Hogan pictured a sheet of glass resting on his shoulders, angled down to the ball. Swing back and through under it without shattering it.
+  phase: backswing
+  source: Ben Hogan, "Five Lessons" (1957)
+  status: approved
+
+- id: landing-spot
+  cue: Pick a landing spot, not the hole.
+  for: Inconsistent chips and pitches.
+  feel: Choose the exact spot the ball should land and let it roll out. Eyes on the spot, swing to the spot.
+  drill: Drop a towel on the green. Land 10 chips on it.
+  phase: short-game
+  source: Common short-game teaching
+  status: approved
+
+- id: think-outside-your-body
+  cue: Think about the target, not your body.
+  for: Golfers frozen by mechanical swing thoughts.
+  feel: Research by Gabriele Wulf and others finds outside cues like "swing toward the flag" usually beat inside ones like "rotate your hips." Pick one outside image.
+  phase: mental
+  source: Wulf et al., attentional focus research
+  status: approved
+
+- id: butt-on-the-wall
+  cue: Keep your backside on the wall.
+  for: Early extension, thin shots, and blocks.
+  feel: Picture your backside touching a wall at address. Keep it there through impact instead of thrusting your hips at the ball.
+  phase: impact
+  source: Common early-extension drill
+  status: approved
+
+- id: whoosh-after-ball
+  cue: Make the whoosh after the ball.
+  for: Casting that wastes your speed.
+  feel: Hold a club by the head and swing it. The loudest whoosh should come after where the ball would be, not before.
+  drill: 5 upside-down swings, then hit balls chasing that sound.
+  phase: downswing
+  source: Common speed drill
+  status: approved
+
+- id: waiter-tray
+  cue: Trail elbow points at the ground.
+  for: Flying elbows and loopy downswings.
+  feel: At the top, the trail elbow points roughly down, like a waiter carrying a tray. That sets the club on plane.
+  drill: Hold the tray pose in a mirror, then swing.
+  phase: backswing
+  source: Common teaching image
+  status: approved
+
+- id: splash-the-sand
+  cue: Splash the sand, not the ball.
+  for: Getting stuck in greenside bunkers.
+  feel: Open the face, enter two inches behind the ball, and throw sand onto the green. The ball rides out on it.
+  drill: Draw a line in the sand. Splash it 10 times, no ball.
+  phase: short-game
+  source: Common bunker teaching
+  status: approved
+
+- id: swing-at-eighty
+  cue: Swing at 80 percent.
+  for: Players who lose control trying to kill it.
+  feel: An 80 percent swing finds the center of the face more often, and center contact beats raw speed for distance.
+  drill: Hit 10 at what feels like 80. Check how far they went.
+  phase: tempo
+  source: Common advice; smash factor / centered contact
+  status: approved
+
+- id: trail-back-pocket
+  cue: Turn into your trail back pocket.
+  for: Swaying and reverse pivots.
+  feel: Your trail pocket moves back behind you, not sideways. Weight stays on the inside of your trail foot.
+  drill: Trail hip an inch from your bag. Turn back without bumping it.
+  phase: backswing
+  source: Common pivot cue
+  status: approved
+
+- id: clip-the-tee
+  cue: Just clip the tee.
+  for: Great practice swings that vanish over the ball.
+  feel: Harvey Penick had students clip a tee with a practice swing, then repeat it with a ball teed up. The ball just gets in the way.
+  drill: Three swings clipping a tee, then hit one.
+  phase: impact
+  source: Harvey Penick, "Little Red Book"
+  status: approved
+
+- id: same-routine
+  cue: Same routine, every shot.
+  for: Range heroes who fall apart on the course.
+  feel: Target, one rehearsal swing, step in, look twice, go. Same steps every time gives your nerves something familiar.
+  drill: Hit your last 10 range balls with the full routine.
+  phase: mental
+  source: Common performance psychology advice
+  status: approved
+
+- id: sweep-the-driver
+  cue: Sweep the driver off the tee.
+  for: Skied drives and big slices with the driver.
+  feel: Ball off your lead heel, teed so half the ball sits above the crown. Tilt your spine slightly away from the target and catch it on the way up.
+  phase: setup
+  source: Common driver setup teaching
+  status: approved
+
+- id: pull-the-bell-rope
+  cue: Pull the bell rope.
+  for: Casting and weak, high shots.
+  feel: From the top, pull your hands straight down like ringing a church bell. The club stays back and releases late.
+  drill: Slow swings, stop with hands at your trail thigh. Shaft should still point up.
+  phase: transition
+  source: Common lag cue
+  status: approved
+
+- id: towel-under-arms
+  cue: Keep the towel under your arms.
+  for: Arms and body working separately.
+  feel: Tuck a towel under both armpits and make half swings without dropping it. Arms and chest move as one.
+  drill: 10 half swings with it, then 5 full swings with the same feel.
+  phase: backswing
+  source: Common connection drill
+  status: approved
+
+- id: listen-for-it
+  cue: Listen for it. Don't look for it.
+  for: Pulling and peeking on short putts.
+  feel: Inside 6 feet, keep your head still and listen for the ball to drop. Looking early pulls your shoulders open.
+  drill: 10 three-footers, eyes on the spot where the ball was.
+  phase: putting
+  source: Common putting advice
+  status: approved
+
+- id: aim-face-first
+  cue: Aim the clubface first, then your feet.
+  for: Good swings that still miss the target.
+  feel: Pick a spot a foot ahead of the ball on your line. Aim the face at the spot, then build your stance around it.
+  drill: Lay a club on your toe line when you practice.
+  phase: setup
+  source: Jack Nicklaus's intermediate target
+  status: approved
+
+- id: chest-to-target
+  cue: Chest to the target at the finish.
+  for: Flips and blocks from the body stalling.
+  feel: Keep turning through impact until your chest faces the target. When the body keeps moving, the hands stop flipping to save the shot.
+  phase: finish
+  source: Common rotation cue
+  status: approved
+
+- id: lead-heel-up
+  cue: Let your lead heel come up.
+  for: Stiff players who can't make a full turn.
+  feel: Jack Nicklaus did it his whole career. Let the lead heel lift an inch going back to free your hips, then replant it to start down.
+  drill: 10 balls feeling heel up, heel down.
+  phase: backswing
+  source: Jack Nicklaus's swing
+  status: approved
+
+- id: pitch-with-your-chest
+  cue: Turn your chest to pitch. Don't flick.
+  for: Bladed and chunked pitches.
+  feel: Wrists stay quiet and the chest turn carries the club through. The body controls distance, not the hands.
+  drill: Pitch 10 with a glove under your lead armpit. Keep it there.
+  phase: short-game
+  source: Common pitching teaching
+  status: approved
+
+- id: exhale
+  cue: Exhale before you pull the trigger.
+  for: Tension and first-tee nerves.
+  feel: Slow breath in behind the ball, full exhale over it. A long exhale drops your shoulders and lowers your grip pressure.
+  phase: mental
+  source: Common breathing technique
+  status: approved
+
+- id: inside-quarter
+  cue: Hit the inside quarter of the ball.
+  for: Slices and pulls from an outside-in path.
+  feel: Stare at the back inside quarter of the ball, behind it and toward your feet. Strike it there and the club has to come from the inside.
+  phase: impact
+  source: Common path cue
+  status: approved
+
+- id: wide-not-long
+  cue: Make your arc wide, not long.
+  for: Overswinging and collapsing arms at the top.
+  feel: Push your hands away from your chest going back. A wide three-quarter swing beats a long, collapsed one.
+  drill: Hit 10 balls stopping at lead arm parallel.
+  phase: backswing
+  source: Common width teaching
+  status: approved
+
+- id: hands-ahead
+  cue: Lead the clubhead with your hands.
+  for: Flips, thins, and ballooning irons.
+  feel: At impact your hands are over your lead thigh, ahead of the ball. The shaft leans forward and pinches the ball.
+  drill: 10 knee-high to knee-high shots, hands ahead at impact.
+  phase: impact
+  source: Common impact fundamental
+  status: approved
+
+- id: turn-in-a-barrel
+  cue: Turn inside a barrel.
+  for: Swaying and sliding off the ball.
+  feel: Picture standing in a barrel just wider than your hips. Turn back and through without your hips touching the sides.
+  phase: backswing
+  source: Classic teaching image
+  status: approved
+
+- id: breezy-easy
+  cue: When it's breezy, swing easy.
+  for: Shots that balloon into the wind.
+  feel: Take one or two more clubs and make a smoother swing. Swinging harder adds spin, and spin is what the wind grabs.
+  phase: course
+  source: Old golf saying; spin physics
+  status: approved
+
+- id: hold-off-the-finish
+  cue: Hold off the finish.
+  for: Hooks and snap hooks.
+  feel: Feel the clubface point at the sky a little longer after impact, lead wrist firm. Less rolling of the hands.
+  drill: 10 balls with a short, held-off finish. Watch the curve shrink.
+  phase: finish
+  source: Common hook fix
+  status: approved
+
+- id: l-to-l
+  cue: Swing L to L.
+  for: Anyone who wants a compact, repeatable swing.
+  feel: Back until your lead arm and shaft make an L. Through until your trail arm and shaft make an L. Good contact lives here.
+  drill: 20 balls L to L with an 8-iron before any full swings.
+  phase: practice
+  source: Common drill
+  status: approved
+
+- id: sweep-the-fairway-wood
+  cue: Sweep it like a broom.
+  for: Topped and fat fairway woods.
+  feel: Ball just forward of center, brush the grass through the ball like a broom. The loft lifts it. Trying to help it up is what tops it.
+  phase: impact
+  source: Common fairway wood teaching
+  status: approved
+
+- id: hum-it
+  cue: Hum while you swing.
+  for: Tension and rushed tempo under pressure.
+  feel: Hum one steady note from takeaway to finish. It's hard to strangle the club while humming, and the rhythm carries into the swing.
+  phase: tempo
+  source: Common tension-release cue
+  status: approved
+
+- id: shoulder-under-chin
+  cue: Lead shoulder turns under your chin.
+  for: Flat, level shoulder turns that lift you out of posture.
+  feel: Your shoulders turn at a right angle to your spine. On the backswing the lead shoulder works down and under your chin, not level around.
+  phase: backswing
+  source: Common shoulder-plane teaching
+  status: approved
+
+- id: rock-the-shoulders
+  cue: Rock the shoulders. Quiet the wrists.
+  for: Wristy putting strokes and inconsistent distance.
+  feel: Your shoulders rock like a seesaw. Arms and putter go along for the ride, hands just hold on.
+  drill: 10 putts with an alignment stick under both armpits.
+  phase: putting
+  source: Common putting fundamental
+  status: approved
+
+- id: back-to-target-longer
+  cue: Start down with your back to the target.
+  for: Shoulders that open early and pull or slice.
+  feel: Let the lower body start down while your back keeps facing the target for a split second longer. The arms drop in behind you.
+  phase: transition
+  source: Common sequencing cue
+  status: approved
+
+- id: change-targets
+  cue: Never hit the same shot twice in a row.
+  for: Range rats whose practice doesn't show up on the course.
+  feel: Change club or target every ball. It feels worse on the range, but research on varied practice shows it holds up better on the course.
+  phase: practice
+  source: Contextual interference / random practice research
+  status: approved
+
+- id: keep-trail-knee-flex
+  cue: Keep some flex in your trail knee.
+  for: Losing posture and spinning your hips on the backswing.
+  feel: Turn back against your trail knee. If it locks straight, your hips over-rotate and the coil you built leaks out.
+  phase: backswing
+  source: Common pivot teaching
+  status: approved
+
+- id: hit-down-to-go-up
+  cue: Hit down to make it go up.
+  for: Players who scoop irons trying to lift the ball.
+  feel: The loft on the club gets the ball in the air. Hit down and through the ball and it climbs. Scoop up at it and it skulls.
+  phase: impact
+  source: Common impact fundamental
+  status: approved
+
+- id: wedge-clock
+  cue: Use a clock for wedge distances.
+  for: Players who guess on partial wedges.
+  feel: Swing your lead arm back to 8, 9, and 10 o'clock, same tempo each time. Three swings per wedge is a yardage chart.
+  drill: Hit 5 at each and write down the carry.
+  phase: short-game
+  source: Dave Pelz's clock system
+  status: approved
+
+- id: pause-at-the-top
+  cue: Finish the backswing before you start down.
+  for: Quick transitions and hitting from the top.
+  feel: Feel a tiny pause at the top, like the club hangs there for a beat. Hideki Matsuyama pauses visibly. You don't have to go that far.
+  phase: tempo
+  source: Common tempo cue; Matsuyama's pause
+  status: approved
+
+- id: lead-hip-back
+  cue: Lead hip goes back, not forward.
+  for: Hips that slide toward the target and get stuck.
+  feel: Starting down, feel your lead hip pocket rotate behind you. Rotation, not a slide, is what clears room for your arms.
+  phase: downswing
+  source: Common rotation cue
+  status: approved
+
+- id: match-the-slope
+  cue: Set your shoulders to the slope.
+  for: Fat and thin shots from uneven lies.
+  feel: Tilt your shoulders to match the ground so the club can swing along it. Uphill lies fly higher and pull. Downhill lies fly lower and push.
+  phase: course
+  source: Common uneven-lie teaching
+  status: approved
+
+- id: elbow-to-hip
+  cue: Trail elbow to trail hip.
+  for: Steep swings, pulls, and deep divots.
+  feel: Start down by dropping your trail elbow toward your trail hip. The club shallows and comes from the inside.
+  drill: Slow-motion swings dropping the elbow to your side first.
+  phase: transition
+  source: Common shallowing cue
+  status: approved
+
+- id: set-by-parallel
+  cue: Club points up by lead arm parallel.
+  for: Late, rushed wrist sets.
+  feel: At lead arm parallel, the shaft points roughly at the sky. Set early, then just turn. It takes timing out of the top.
+  drill: Check it in a mirror 10 times, then hit balls.
+  phase: backswing
+  source: Common wrist-hinge teaching
+  status: approved
+
+- id: ten-steps
+  cue: You get ten steps to be mad.
+  for: Golfers who let one bad hole turn into five.
+  feel: After a bad shot, take ten steps to be angry. Then it's over. The next shot doesn't know about the last one.
+  phase: mental
+  source: Common performance psychology advice
+  status: approved

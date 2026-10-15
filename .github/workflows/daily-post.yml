@@ -1,0 +1,68 @@
+name: Daily swing thought
+
+on:
+  schedule:
+    # 11:17 UTC is 7:17am US Eastern in summer, 6:17am in winter (cron has no DST).
+    # Off the top of the hour because GitHub delays or drops runs at :00 under load.
+    - cron: "17 11 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      # Repository variable. Until it is exactly "true", every run is a dry run.
+      X_POSTING_ENABLED: ${{ vars.X_POSTING_ENABLED }}
+      POST_TIMEZONE: ${{ vars.POST_TIMEZONE || 'America/New_York' }}
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Post today's swing thought
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_SECRET: ${{ secrets.X_API_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+        run: |
+          if [ "$X_POSTING_ENABLED" = "true" ]; then
+            python -m bot post --live
+          else
+            echo "::notice::Dry run. Set the repository variable X_POSTING_ENABLED to true to post for real."
+            python -m bot post
+          fi
+
+      - name: Commit the post log
+        if: env.X_POSTING_ENABLED == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/posted.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Log swing thought for $(TZ="$POST_TIMEZONE" date +%F)"
+          for attempt in 1 2 3; do
+            git pull --rebase && git push && exit 0
+            sleep $((attempt * 5))
+          done
+          echo "::error::Posted, but could not push state/posted.json. Tomorrow's run may repeat today's thought."
+          exit 1
+
+      - name: Show the coming week
+        if: always()
+        run: |
+          echo "## Coming up" >> "$GITHUB_STEP_SUMMARY"
+          python -m bot preview 7 --markdown >> "$GITHUB_STEP_SUMMARY"
