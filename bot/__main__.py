@@ -4,6 +4,7 @@
     python -m bot preview [DAYS]     show the next posts exactly as they'll go out
     python -m bot post               dry run: show what today's post would be
     python -m bot post --live        post it to X and log it in state/posted.json
+    python -m bot whoami             check the X credentials and show which account they post as
 """
 
 from __future__ import annotations
@@ -89,6 +90,16 @@ def cmd_post(args) -> int:
     return 0
 
 
+def cmd_whoami(_args) -> int:
+    try:
+        username = XClient.from_env().whoami()
+    except PostError as e:
+        print(f"::error::{e}")
+        return 1
+    print(f"::notice::X credentials work. Posts will go to @{username}.")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="python -m bot")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -103,6 +114,8 @@ def main(argv: list[str] | None = None) -> int:
     post = sub.add_parser("post", help="post today's swing thought")
     post.add_argument("--live", action="store_true", help="actually post (default is a dry run)")
     post.set_defaults(func=cmd_post)
+
+    sub.add_parser("whoami", help="check X credentials without posting").set_defaults(func=cmd_whoami)
 
     args = parser.parse_args(argv)
     return args.func(args)

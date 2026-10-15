@@ -128,3 +128,14 @@ def test_x_client_names_missing_secrets(monkeypatch):
         monkeypatch.delenv(name, raising=False)
     with pytest.raises(PostError, match="X_API_KEY, X_API_SECRET"):
         XClient.from_env()
+
+
+def test_x_client_whoami_reads_username(monkeypatch):
+    from bot.x_client import XClient
+
+    client = XClient("k", "s", "t", "ts")
+    calls = []
+    monkeypatch.setattr(client._session, "get",
+                        lambda url, **kw: calls.append(url) or FakeResponse(200, {"data": {"username": "SwingBot"}}))
+    assert client.whoami() == "SwingBot"
+    assert calls == ["https://api.x.com/2/users/me"]

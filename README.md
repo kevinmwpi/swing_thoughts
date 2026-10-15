@@ -96,7 +96,9 @@ Repo → Settings → Secrets and variables → Actions:
 ### 4. Test, then go live
 
 Actions → **Daily swing thought** → Run workflow. With the variable unset you
-get a dry run, and the job summary shows the coming week of posts. Once it's
+get a dry run: it checks your keys against X without posting, shows which
+`@account` they will post as, and the job summary shows the coming week of
+posts. Once it's
 `true`, a manual run posts for real and commits the log.
 
 Scheduled workflows only run from the repository's **default branch**.
@@ -120,6 +122,7 @@ pip install -r requirements.txt
 python -m bot check          # validate the bank
 python -m bot preview 14     # the next two weeks of posts, exactly as they'll go out
 python -m bot post           # dry run of today's post
+python -m bot whoami         # check X keys (from env vars) without posting
 python -m pytest -q
 ```
 

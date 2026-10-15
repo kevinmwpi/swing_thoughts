@@ -45,7 +45,16 @@ class XClient:
 
     def create_post(self, text: str) -> str:
         resp = self._session.post(f"{self._base_url}/2/tweets", json={"text": text}, timeout=30)
+        return str(self._check(resp)["data"]["id"])
+
+    def whoami(self) -> str:
+        """The @username these credentials post as. Reads only; never posts."""
+        resp = self._session.get(f"{self._base_url}/2/users/me", timeout=30)
+        return self._check(resp)["data"]["username"]
+
+    @staticmethod
+    def _check(resp) -> dict:
         if not resp.ok:
             hint = _HINTS.get(resp.status_code, "")
             raise PostError(f"X API returned {resp.status_code}: {resp.text[:500]} {hint}".strip())
-        return str(resp.json()["data"]["id"])
+        return resp.json()
