@@ -68,9 +68,11 @@ Lead side = closer to the target. Trail side = the other one.
 2. Create an app. Under **User authentication settings**, set permissions to
    **Read and write**. Choose app type "Web App, Automated App or Bot". Any
    URL works for the callback and website, for example this repo's URL.
-3. **After** saving Read and write, generate the **API Key and Secret** and the
-   **Access Token and Secret**. Tokens made before the permission change can
-   only read, and posting fails with a 403.
+3. **After** saving Read and write, generate the **Access Token and Secret**
+   on the app's Keys and tokens page. Tokens made before the permission change
+   can only read, and posting fails with a 403. Creating the app gives you
+   only the consumer key, consumer secret, and bearer token. The bearer token
+   can't post, so the bot doesn't use it.
 4. Buy a small amount of credits. X is pay-per-use: about **$0.015 per text
    post**, so $5 covers most of a year. A post with a link costs $0.20, which
    is why the bot refuses links. Turn off auto-recharge if you want a hard cap.
@@ -79,8 +81,14 @@ Lead side = closer to the target. Trail side = the other one.
 
 Repo → Settings → Secrets and variables → Actions:
 
-- **Secrets** tab, add four: `X_API_KEY`, `X_API_SECRET`, `X_ACCESS_TOKEN`,
-  `X_ACCESS_TOKEN_SECRET`.
+- **Secrets** tab, add four:
+
+  | GitHub secret | X calls it |
+  | --- | --- |
+  | `X_API_KEY` | Consumer Key (API Key) |
+  | `X_API_SECRET` | Consumer Secret (API Key Secret) |
+  | `X_ACCESS_TOKEN` | Access Token |
+  | `X_ACCESS_TOKEN_SECRET` | Access Token Secret |
 - **Variables** tab, add `X_POSTING_ENABLED` = `true` when you're ready to go
   live. Optional: `POST_TIMEZONE` (default `America/New_York`). It decides what
   counts as "today."
