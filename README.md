@@ -8,7 +8,7 @@ do anything for you. Every so often one does, and it changes how you hit the
 ball. This account posts one a day so you can keep trying them until you find
 yours.
 
-[See the first one on X →](https://x.com/i/status/2110828548982259983)
+**Follow [@thinking_golf](https://x.com/thinking_golf) on X** · [see the first post](https://x.com/thinking_golf/status/2110828548982259983)
 
 ## What you get each morning
 
