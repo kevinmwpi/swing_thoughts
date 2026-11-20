@@ -544,3 +544,522 @@
   phase: mental
   source: Common performance psychology advice
   status: approved
+
+# --- Winter batch: posts #61-120, about Dec 14 to Feb 11. Added Nov 20, 2026. ---
+# Leans toward drills you can do at home, indoors, or on a simulator.
+
+- id: film-yourself
+  cue: Film your swing before you fix it.
+  for: Fixing a fault you've never actually seen.
+  feel: What you feel and what you do are rarely the same. A phone at hand height, aimed down the target line, settles it.
+  drill: Film 5 swings down the line and 5 face-on.
+  phase: practice
+  source: Common coaching practice
+  status: approved
+
+- id: coin-target
+  cue: Putt to a coin, not a cup.
+  for: Short putts that drift off line.
+  feel: Aim small, miss small. Roll putts at a quarter on the carpet all winter and the real hole will look huge in spring.
+  drill: 20 putts from 6 feet at a coin. Count how many touch it.
+  phase: putting
+  source: Common aim-small putting drill
+  status: approved
+
+- id: fingers-not-palm
+  cue: Hold it in your fingers, not your palm.
+  for: Weak slices and stiff wrists.
+  feel: The grip runs across the base of your lead fingers. Palm grips lock the wrists and leave the face open.
+  drill: Hold it with just your lead index finger and heel pad.
+  phase: setup
+  source: Common grip fundamental
+  status: approved
+
+- id: slow-motion
+  cue: Swing at 20 percent speed.
+  for: Swing changes that never make it to the course.
+  feel: Your body learns a new move faster in slow motion. If you can't do it slowly, you can't do it fast.
+  drill: 10 slow swings a night, no ball. Check the ceiling first.
+  phase: practice
+  source: Common motor learning practice
+  status: approved
+
+- id: cold-air-club-up
+  cue: Cold day? Take one more club.
+  for: Winter rounds where every iron comes up short.
+  feel: Cold air is denser and a cold ball is less lively, so both cost carry. Below about 50 degrees, plan on one extra club and a smooth swing.
+  phase: course
+  source: Air density and ball temperature effects
+  status: approved
+
+- id: toe-up-at-hip
+  cue: Toe up at hip height.
+  for: Takeaways that roll the face open or shut it down.
+  feel: When the shaft is parallel to the ground going back, the toe points roughly at the sky and the shaft runs along your toe line.
+  drill: Stop there in a mirror 10 times.
+  phase: takeaway
+  source: Common takeaway checkpoint
+  status: approved
+
+- id: center-of-the-putter
+  cue: Hit the middle of the putter.
+  for: Putts that come up short or wobble.
+  feel: Off-center hits lose speed and twist the face. Lots of misread putts were really mishit.
+  drill: Put two rubber bands on the putter face, just wider than a ball. Roll 20 between them.
+  phase: putting
+  source: Common putting contact drill
+  status: approved
+
+- id: think-box-play-box
+  cue: Think box, play box.
+  for: Golfers still deciding while they swing.
+  feel: Do all your thinking behind the ball. Once you step over the line into the play box, the only job left is to swing. Vision54 coaches teach it.
+  phase: mental
+  source: Pia Nilsson and Lynn Marriott, Vision54
+  status: approved
+
+- id: flat-lead-wrist
+  cue: Flat lead wrist at the top.
+  for: Slices from a face that's open at the top.
+  feel: At the top, the back of your lead hand lines up with your forearm. A cupped wrist opens the face before you start down.
+  drill: Hold the top in a mirror and check the wrist.
+  phase: backswing
+  source: Common clubface teaching
+  status: approved
+
+- id: let-the-bounce-brush
+  cue: Let the bounce brush the ground.
+  for: Chips that dig.
+  feel: A wedge's back edge is built to glide. Don't lean the shaft way forward. Let the sole brush through.
+  drill: Chip foam balls off a mat. Listen for a brush, not a thud.
+  phase: short-game
+  source: Common bounce-first chipping teaching
+  status: approved
+
+- id: speed-sets
+  cue: Train speed over the winter.
+  for: Wanting more distance by spring.
+  feel: Speed is trained like strength. A few sets of all-out swings a few days a week add speed over a winter. Warm up first.
+  drill: 3 sets of 5 max swings with a driver held upside down.
+  phase: practice
+  source: Overspeed training protocols
+  status: approved
+
+- id: trail-palm-matches-face
+  cue: Trail palm matches the clubface.
+  for: Hooks from a trail hand turned too far under.
+  feel: At address your trail palm faces the target, same as the clubface. The lifeline of that hand sits on top of your lead thumb.
+  drill: Set your grip in a mirror 10 times.
+  phase: setup
+  source: Common grip fundamental
+  status: approved
+
+- id: hallway-ladder
+  cue: Stop each one just past the last.
+  for: Lag putts that come up short or race by.
+  feel: Distance is a feel you train, not a mechanic. Each ball should stop a little past the one before it.
+  drill: Roll 5 balls down a hallway, each just past the last.
+  phase: putting
+  source: Common ladder drill
+  status: approved
+
+- id: trail-knee-to-lead-knee
+  cue: Trail knee to lead knee.
+  for: Hanging back on your trail side through impact.
+  feel: Through the ball, your trail knee moves toward the target until it nearly touches your lead knee.
+  drill: Hold every finish with your knees close together.
+  phase: downswing
+  source: Common weight-shift cue
+  status: approved
+
+- id: know-your-miss
+  cue: Know your miss, then plan for it.
+  for: Aiming at the flag no matter what.
+  feel: Plan around your miss instead of trying to erase it. If you miss right, aim so a ball going right still finds grass.
+  drill: Recall your last 5 rounds. Where did the misses go?
+  phase: course
+  source: Common course management advice
+  status: approved
+
+- id: upper-back-turn
+  cue: Turn from your upper back.
+  for: Turning by swaying or lifting the arms.
+  feel: Real rotation comes from your mid back. Your hips can stay fairly quiet while your chest turns.
+  drill: Sit on a chair, club across your chest. Turn 10 times, hips still.
+  phase: backswing
+  source: Common seated rotation drill
+  status: approved
+
+- id: pencil-in-the-watchband
+  cue: Flat lead wrist through the chip.
+  for: Flipped, scooped chips.
+  feel: The lead wrist stays flat while the chest turns. Flipping it to help the ball up thins it.
+  drill: A pencil under your watch band pokes you if you flip.
+  phase: short-game
+  source: Common chipping drill
+  status: approved
+
+- id: grip-while-watching-tv
+  cue: Build your grip without looking.
+  for: Grips that change from round to round.
+  feel: A grip feels right when it's familiar. Twenty reps a night and by spring the right grip feels normal.
+  drill: 20 grips during a TV show. Check one in a mirror.
+  phase: practice
+  source: Common off-season practice
+  status: approved
+
+- id: eyes-over-the-ball
+  cue: Eyes over the ball, or just inside it.
+  for: Good strokes that start offline.
+  feel: Eyes outside the ball distort the line. Set them over it or a touch inside.
+  drill: Drop a ball from your nose at address. It should land on or just inside yours.
+  phase: putting
+  source: Common putting setup check
+  status: approved
+
+- id: let-your-head-turn
+  cue: Let your head turn with the follow-through.
+  for: Stiff necks and blocked finishes.
+  feel: Watch the ball into impact, then let your head rotate up with your chest. Annika Sorenstam's head turned toward the target before the ball was gone.
+  phase: finish
+  source: Annika Sorenstam's swing
+  status: approved
+
+- id: railroad-tracks
+  cue: Stand on railroad tracks.
+  for: Lining your body up at the flag.
+  feel: The ball sits on the outside rail, aimed at the target. Your feet, hips, and shoulders sit on the inside rail, parallel to it.
+  drill: Lay two clubs down as tracks when you practice.
+  phase: setup
+  source: Classic alignment image
+  status: approved
+
+- id: putt-to-a-beat
+  cue: Putt to a beat.
+  for: Jabby, inconsistent putting strokes.
+  feel: Good putters keep the same rhythm on every putt and let the length of the stroke set the distance.
+  drill: Set a metronome to about 75 beats per minute. Back on one, through on the next.
+  phase: putting
+  source: Common putting tempo drill
+  status: approved
+
+- id: chase-one-number
+  cue: On the simulator, chase one number.
+  for: Simulator golfers buried in data.
+  feel: Pick the one number tied to your miss. Face-to-path for a slice, attack angle for a short driver, smash factor for strike. Ignore the rest.
+  phase: practice
+  source: Common launch monitor coaching
+  status: approved
+
+- id: toe-passes-heel
+  cue: Let the toe pass the heel.
+  for: Slices from a face that never closes.
+  feel: Through impact your forearms rotate and the toe turns over the heel, like a tilted baseball swing.
+  drill: Half swings with hands split 3 inches apart. Feel the forearms cross.
+  phase: downswing
+  source: Common split-hand release drill
+  status: approved
+
+- id: open-then-grip
+  cue: Open the face, then take your grip.
+  for: Bunker and lob shots that come out low.
+  feel: Turn the club open first, then grip it. Grip first and twist the face open, and it twists back shut at impact.
+  phase: short-game
+  source: Common short-game fundamental
+  status: approved
+
+- id: one-number-by-spring
+  cue: Pick one number to fix by spring.
+  for: Off-season practice with no direction.
+  feel: Choose one stat, like putts per round, fairways hit, or up-and-downs. Practice only what moves it, then check it again in April.
+  phase: mental
+  source: Common practice planning advice
+  status: approved
+
+- id: up-not-around
+  cue: Take it back up, not around.
+  for: Takeaways that whip it behind you.
+  feel: Early on, the club works up as your chest turns and stays in front of you, not behind your back.
+  drill: Backside a foot from a wall, slow backswings without the club touching it.
+  phase: takeaway
+  source: Common wall drill
+  status: approved
+
+- id: hold-the-putting-finish
+  cue: Hold your putting finish.
+  for: Putts that die because you slowed down.
+  feel: Freeze the putter where the stroke ends. The follow-through should be at least as long as the backstroke.
+  drill: 10 putts, holding each finish until the ball stops.
+  phase: putting
+  source: Common putting drill
+  status: approved
+
+- id: hips-that-turn
+  cue: Your turn needs hips that turn.
+  for: Short backswings from tight hips.
+  feel: You can't turn what won't move. A couple of minutes of hip mobility a day adds real turn by spring. Never push into pain.
+  drill: 10 hip switches a day from a 90/90 sit.
+  phase: practice
+  source: Common golf mobility drill
+  status: approved
+
+- id: freeze-impact
+  cue: Freeze your impact.
+  for: Flipping and weak contact.
+  feel: At impact your hands lead, the lead wrist is flat, and your hips are open. Feeling it slowly teaches your body where it is.
+  drill: Slow half swings into a duffel stuffed with towels. Hold impact.
+  phase: impact
+  source: Common impact bag drill
+  status: approved
+
+- id: putt-chip-pitch
+  cue: Putt if you can. Chip if you can't.
+  for: Golfers who grab a lob wedge around every green.
+  feel: The lower the shot, the more predictable it is. Pitch only when you must carry something. It's an old saying because it works.
+  phase: short-game
+  source: Traditional short-game saying
+  status: approved
+
+- id: short-lead-thumb
+  cue: Keep your lead thumb short.
+  for: Overswinging and losing the club at the top.
+  feel: Pull your lead thumb up the grip a little instead of stretching it down. A short thumb supports the club at the top so it doesn't collapse.
+  phase: setup
+  source: Ben Hogan, "Five Lessons"
+  status: approved
+
+- id: grade-the-process
+  cue: Grade the process, not the result.
+  for: Golfers whose mood follows the scorecard.
+  feel: After each shot, ask one question. Did I commit to it? A committed swing that takes a bad bounce is still a good shot.
+  phase: mental
+  source: Common performance psychology advice
+  status: approved
+
+- id: shaft-at-the-target
+  cue: Shaft parallel to the line at the top.
+  for: Shots that start offline even with good aim.
+  feel: At the top of a full swing, the shaft points about at the target. Laid off or across the line changes your path.
+  drill: Check it at the top in a mirror.
+  phase: backswing
+  source: Common top-of-swing checkpoint
+  status: approved
+
+- id: lead-hand-putts
+  cue: Putt with your lead hand only.
+  for: Wristy strokes that flip at impact.
+  feel: Your lead hand guides the stroke and keeps the face square. One-handed, you'll feel any flip right away.
+  drill: 20 lead-hand-only putts from 4 feet on the carpet.
+  phase: putting
+  source: Common one-hand putting drill
+  status: approved
+
+- id: mats-hide-fat-shots
+  cue: Mats hide your fat shots.
+  for: Simulator golfers who strike it worse outdoors.
+  feel: On a mat the club bounces into the ball, so fat shots can still fly fine. Check your strike.
+  drill: Lay a tee flat 2 inches behind the ball. Hit it, and that shot was fat.
+  phase: practice
+  source: Common indoor practice advice
+  status: approved
+
+- id: post-up
+  cue: Post up on your lead leg.
+  for: Players who slide their hips and lose power.
+  feel: Through impact your lead leg firms up and straightens. It works like a brake that whips your hips open and the club through.
+  phase: downswing
+  source: Common ground-force teaching
+  status: approved
+
+- id: one-more-club
+  cue: Take one more club.
+  for: Approach shots that keep landing short.
+  feel: Amateurs miss short of the hole far more often than long. One more club and a smooth swing finds the middle of the green.
+  phase: course
+  source: Common course management advice; amateur shot data
+  status: approved
+
+- id: forward-press
+  cue: Start with a forward press.
+  for: Jerky takeaways from a dead stop.
+  feel: A small press of the hands or trail knee toward the target, then the swing rebounds back. Moving into motion beats starting frozen.
+  phase: tempo
+  source: Common swing-start cue
+  status: approved
+
+- id: change-the-club
+  cue: Change the club, not the swing.
+  for: Golfers who invent a new chip every time.
+  feel: Keep one chipping motion and pick the club by how much roll you want. Wedge for less roll, 8-iron for more.
+  drill: Chip to one spot with three clubs and watch the roll.
+  phase: short-game
+  source: Common chipping system
+  status: approved
+
+- id: balanced-over-the-feet
+  cue: Balance over the middle of your feet.
+  for: Tipping toward the ball or back on your heels.
+  feel: Weight over the middle of your feet, a touch toward the balls. Ready to jump straight up.
+  drill: Rock onto your toes, then heels, then settle in between.
+  phase: setup
+  source: Common posture fundamental
+  status: approved
+
+- id: look-at-the-hole
+  cue: Look at the hole on long putts.
+  for: Lag putts with bad distance control.
+  feel: Your eyes feed distance to your hands. Try watching the hole instead of the ball while you stroke.
+  drill: 10 carpet putts to a doorway, eyes up.
+  phase: putting
+  source: Common lag putting drill
+  status: approved
+
+- id: know-your-strike
+  cue: Know where you hit it on the face.
+  for: Driver distance that comes and goes.
+  feel: Center contact is worth more yards than extra speed. Toe and heel hits also curve like swing faults.
+  drill: Spray foot powder on the face and read each mark.
+  phase: impact
+  source: Common strike-location drill
+  status: approved
+
+- id: tee-on-the-trouble-side
+  cue: Tee it up on the trouble side.
+  for: Tee shots that drift into the hazard you fear.
+  feel: If trouble is right, tee up on the right side of the box and aim away from it. You open up more of the fairway.
+  phase: course
+  source: Common course management advice
+  status: approved
+
+- id: straight-not-stiff
+  cue: Lead arm straight, not stiff.
+  for: Rigid swings that kill speed.
+  feel: Keep the lead arm extended but relaxed. A soft elbow at the top is fine. Locking it puts tension all the way up into your shoulders.
+  phase: backswing
+  source: Common teaching correction
+  status: approved
+
+- id: hybrid-like-an-iron
+  cue: Hit your hybrid like an iron.
+  for: Topped hybrids from trying to sweep them.
+  feel: Ball a little forward of center, and hit slightly down like a long iron. The wide sole keeps it from digging.
+  phase: impact
+  source: Common hybrid teaching
+  status: approved
+
+- id: end-with-pressure
+  cue: End practice with pressure.
+  for: Short putts that fall apart when they count.
+  feel: Finish every session with a test you can fail. Pressure in practice makes pressure on the course feel familiar.
+  drill: Make 10 three-footers in a row. Miss one, start over.
+  phase: practice
+  source: Common pressure practice
+  status: approved
+
+- id: bunker-finish-length
+  cue: Longer finish, longer bunker shot.
+  for: Bunker shots with no distance control.
+  feel: Keep the same splash spot every time. Change the distance with the length of your follow-through.
+  drill: Hit three each with a short, half, and full finish.
+  phase: short-game
+  source: Common bunker distance teaching
+  status: approved
+
+- id: trail-shoulder-lower
+  cue: Trail shoulder sits lower at address.
+  for: Over-the-top swings that start from level shoulders.
+  feel: Your trail hand is lower on the grip, so your trail shoulder should sit a little lower too. Level shoulders point your upper body across the line.
+  phase: setup
+  source: Common setup fundamental
+  status: approved
+
+- id: read-from-below
+  cue: Read the putt from below the hole.
+  for: Misreading break.
+  feel: Break is easiest to see from the low side, where the slope tilts toward you. Take a look from there before you commit.
+  drill: Next round, look from the low side on putts over 10 feet.
+  phase: putting
+  source: Common green-reading advice
+  status: approved
+
+- id: roll-the-trail-ankle
+  cue: Roll the trail ankle.
+  for: Spinning out and a trail heel that flies up early.
+  feel: Through impact, roll onto the inside of your trail foot instead of popping the heel straight up. It keeps you in posture longer.
+  phase: downswing
+  source: Common footwork teaching
+  status: approved
+
+- id: middle-of-the-green
+  cue: Aim at the middle of the green.
+  for: Short-siding yourself chasing flags.
+  feel: The center gives you room to miss in every direction. Go at the flag only with a short iron and room to miss.
+  phase: course
+  source: Common course management advice
+  status: approved
+
+- id: waggle-then-go
+  cue: Waggle, then go.
+  for: Freezing over the ball.
+  feel: A small waggle keeps your hands soft. Standing still over the ball for more than a few seconds lets tension creep in.
+  drill: Waggle twice, look once, swing. Same every time.
+  phase: tempo
+  source: Common pre-swing routine
+  status: approved
+
+- id: fairway-bunker
+  cue: Ball first from a fairway bunker.
+  for: Fat shots from fairway bunkers.
+  feel: Grip down an inch, ball a touch back, lower body quiet. Take one more club and catch the ball before the sand.
+  phase: course
+  source: Common fairway bunker teaching
+  status: approved
+
+- id: ball-position
+  cue: Check your ball position.
+  for: Contact that comes and goes.
+  feel: Center for wedges, a ball or two forward for mid irons, inside the lead heel for driver. It drifts without you noticing.
+  drill: Lay a club from your feet to the ball to check it.
+  phase: setup
+  source: Common setup fundamental
+  status: approved
+
+- id: steeper-from-the-rough
+  cue: Steeper from the rough.
+  for: Shots that twist and grab out of thick grass.
+  feel: Ball back a little, firmer grip, steeper swing, so less grass gets between club and ball. Expect less spin and more roll.
+  phase: course
+  source: Common rough teaching
+  status: approved
+
+- id: hybrid-chip
+  cue: Chip with a hybrid from the fringe.
+  for: Chunked chips from tight lies.
+  feel: Grip down, stand close, and use your putting stroke. The wide sole won't dig, and the ball rolls out like a putt.
+  phase: short-game
+  source: Common short-game option
+  status: approved
+
+- id: safest-club-first-tee
+  cue: Hit your safest club off the first tee.
+  for: Rounds that start with a double bogey.
+  feel: Nerves peak on the first tee. Pick the club you hit straightest, not the longest one, and get the round started.
+  phase: course
+  source: Common course management advice
+  status: approved
+
+- id: use-the-line
+  cue: Use the line on your ball.
+  for: Putts where you never feel aimed.
+  feel: From behind, line up the logo or a drawn line with your start line. Then square the putter to it. Some players aim worse with it, so test it.
+  phase: putting
+  source: Common putting alignment aid
+  status: approved
+
+- id: favorite-layup
+  cue: Lay up to your favorite number.
+  for: Golfers who hit 3-wood on every second shot.
+  feel: Know your favorite full wedge distance. On a par 5 you can't reach, lay up to that number instead of as close as possible.
+  phase: course
+  source: Common course management advice
+  status: approved
